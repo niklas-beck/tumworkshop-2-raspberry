@@ -58,7 +58,7 @@ namespace TUMWorkshop
                 return new BadRequestObjectResult($@"Request must contain query parameter 'blobUri' designating the name of the file to download");
             }
             // Environment.GetEnvironmentVariable(@"STORAGE_ACCOUNT_NAME")
-            string fileEndpoint = "https://s2tumworkshop0.blob.core.windows.net/public/" + blobUriString + ".jpg";
+            string fileEndpoint = "https://tumworkshop2raspberry.blob.core.windows.net/public/" + blobUriString + ".jpg";
 
             BlockBlobClient containerClient = new BlockBlobClient(new Uri(fileEndpoint), new DefaultAzureCredential());
 
