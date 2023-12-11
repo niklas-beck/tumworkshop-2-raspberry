@@ -1,7 +1,7 @@
 variable "basename" {
   type        = string
   description = "The base name for all resources"
-  default     = "s2tumworkshop0"
+  default     = "tumworkshop2raspberry"
 }
 
 variable "resource_group_name" {
